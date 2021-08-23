@@ -4,15 +4,17 @@ public class Character {
     private int id;
     private String nom;
     private String job;
+    private int hp;
 
 
     public Character() {
     }
 
-    public Character(int id, String nom, String job) {
+    public Character(int id, String nom, String job, int hp) {
         this.id = id;
         this.nom = nom;
         this.job = job;
+        this.hp = hp;
     }
 
     public void setId(int id) {
@@ -27,6 +29,10 @@ public class Character {
         this.job = job;
     }
 
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
     public int getId() {
         return id;
     }
@@ -39,12 +45,17 @@ public class Character {
         return job;
     }
 
+    public int getHp() {
+        return hp;
+    }
+
     @Override
     public String toString() {
         return "Character{" +
                 "id=" + id +
                 ", nom='" + nom + '\'' +
                 ", job='" + job + '\'' +
+                ", hp=" + hp +
                 '}';
     }
 }
