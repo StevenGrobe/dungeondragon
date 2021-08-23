@@ -18,8 +18,14 @@ public class CharacterController {
     public List<Character>listePersonnages() {
         return characterDao.findAll();
     }
+
     @GetMapping(value = "/Personnages/{id}")
     public Character afficherUnPersonnage(@PathVariable int id) {
         return characterDao.findById(id);
+    }
+
+    @PostMapping(value = "Personnages")
+    public void ajouterPersonnage(@RequestBody Character character) {
+        characterDao.save(character);
     }
 }

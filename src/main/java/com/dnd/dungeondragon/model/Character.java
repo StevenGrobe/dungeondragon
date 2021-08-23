@@ -6,7 +6,6 @@ public class Character {
     private String job;
     private int hp;
 
-
     public Character() {
     }
 
