@@ -1,5 +1,5 @@
-package com.dnd.dungeondragon.dao;
-import com.dnd.dungeondragon.model.Character;
+package com.dnd.characters.dao;
+import com.dnd.characters.model.Character;
 import java.util.List;
 
 public interface CharacterDao {

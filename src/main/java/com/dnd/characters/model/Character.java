@@ -1,4 +1,4 @@
-package com.dnd.dungeondragon.model;
+package com.dnd.characters.model;
 
 public class Character {
     private int id;

@@ -1,5 +1,5 @@
-package com.dnd.dungeondragon.dao;
-import com.dnd.dungeondragon.model.Character;
+package com.dnd.characters.dao;
+import com.dnd.characters.model.Character;
 import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
